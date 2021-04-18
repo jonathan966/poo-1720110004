@@ -21,7 +21,6 @@ def clasificar(text):
     else:
         response.raise_for_status()
 
-
 while True:
     pregunta = input("ingrese las carcateristicas del smarphone : ")
  # CHANGE THIS to something you want your  machine learning model to classify
@@ -30,10 +29,8 @@ while True:
     label = demo["class_name"]
     confidence = demo["confidence"]
 
-
     if label == "samsung_s21_ultra":
         print("te envio el Samsung s21 ultra")
     elif label == "iphone_12":
         print("te envio el iphone 12")
         
-    
